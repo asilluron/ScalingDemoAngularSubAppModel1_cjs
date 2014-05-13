@@ -1,4 +1,4 @@
-ScalingDemoAngularSubAppModel1_cjs
-==================================
+AngularSubApp_cjs
+=================
 
-Demo Angular app - model abstraction - CJS edition
+Demo Angular sub app - cjs version
