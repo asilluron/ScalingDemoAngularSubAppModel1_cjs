@@ -1,6 +1,6 @@
-function Blogs(params) {
+module.exports = function () {
 	return {
-		query: function () {
+		query: function (params) {
 			return [{
 				title: "Blog Entry 1",
 				summary: "some text about a summary",
@@ -29,6 +29,4 @@ function Blogs(params) {
 			}];
 		}
 	};
-}
-
-module.exports = Blogs;
+};
