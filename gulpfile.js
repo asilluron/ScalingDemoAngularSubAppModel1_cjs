@@ -8,7 +8,7 @@ gulp.task('default', function () {
 
 gulp.task('deploy', function () {
 	return browserify('./src/blog-resources/resources.js')
-		.bundle({standalone: "blog-resources"})
+		.bundle()
 		.pipe(source('blog-resources.js'))
 		.pipe(gulp.dest('./exports/'));
 });
