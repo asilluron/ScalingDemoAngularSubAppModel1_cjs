@@ -1,13 +1,11 @@
 !function(e){if("object"==typeof exports)module.exports=e();else if("function"==typeof define&&define.amd)define(e);else{var o;"undefined"!=typeof window?o=window:"undefined"!=typeof global?o=global:"undefined"!=typeof self&&(o=self),o.blogResources=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
-var Blogs = _dereq_("./resources/Blogs");
-
-var blogResourcesApp = angular.module("blog-resources", [])
-	.service("Blogs", Blogs);	
+module.exports = angular.module("blog-resources", [])
+	.service("Blogs", _dereq_("./resources/Blogs"));	
 
 },{"./resources/Blogs":2}],2:[function(_dereq_,module,exports){
-function Blogs(params) {
+module.exports = function () {
 	return {
-		query: function () {
+		query: function (params) {
 			return [{
 				title: "Blog Entry 1",
 				summary: "some text about a summary",
@@ -36,9 +34,7 @@ function Blogs(params) {
 			}];
 		}
 	};
-}
-
-module.exports = Blogs;
+};
 },{}]},{},[1])
 (1)
 });
